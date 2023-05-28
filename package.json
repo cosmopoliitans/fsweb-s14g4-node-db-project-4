@@ -2,7 +2,8 @@
   "name": "node-db4-project",
   "version": "1.0.0",
   "scripts": {
-    "server": "nodemon index.js",
+    "start": "node index",
+    "server": "nodemon index",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
@@ -15,9 +16,12 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "expres": "^0.0.5",
     "express": "^4.18.2",
     "knex": "^2.4.2",
     "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "nodemon": "^2.0.22"
   }
 }
